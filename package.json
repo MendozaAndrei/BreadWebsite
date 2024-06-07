@@ -1,0 +1,24 @@
+{
+  "name": "breadweb",
+  "version": "1.0.0",
+  "description": "Bread Website for Jessie. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreiJan/BreadWebsite.git"
+  },
+  "author": "Andrei Jan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreiJan/BreadWebsite/issues"
+  },
+  "homepage": "https://github.com/AndreiJan/BreadWebsite#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "passport": "^0.7.0"
+  }
+}
