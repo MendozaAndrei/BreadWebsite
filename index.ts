@@ -21,11 +21,8 @@ app.use(
   }),
 )
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello World");
+  res.render("homepage");
 });
-app.get("/home", (req: Request, res: Response) => {
-    res.render("homepage");
-})
 
 app.listen(3000, () => {
   console.log("Server is running on port http://localhost:3000");
