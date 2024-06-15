@@ -3,6 +3,7 @@ import path from "path";
 import session from "express-session";
 const app = express();
 import expressLayouts from "express-ejs-layouts";
+
 app.use(expressLayouts);
 
 app.set("view engine", "ejs")
@@ -20,9 +21,14 @@ app.use(
     },
   }),
 )
-app.get("/", (req: Request, res: Response) => {
+
+
+app.set("view engine", "ejs"); //tells server that we will be using ejs files
+
+app.get("/home", (req: Request, res: Response) => {
   res.render("homepage");
 });
+//npm start to run this bitch up
 
 app.listen(3000, () => {
   console.log("Server is running on port http://localhost:3000");
