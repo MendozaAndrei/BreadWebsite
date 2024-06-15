@@ -3,6 +3,8 @@ import path from "path";
 import session from "express-session";
 const app = express();
 import expressLayouts from "express-ejs-layouts";
+import passport from "passport";
+
 app.use(expressLayouts);
 
 app.set("view engine", "ejs")
@@ -20,6 +22,10 @@ app.use(
     },
   }),
 )
+
+
+app.set("view engine", "ejs"); //→ tells server that we will be using ejs files
+
 app.get("/home", (req: Request, res: Response) => {
   res.render("homepage");
 });
