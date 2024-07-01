@@ -32,7 +32,7 @@ app.set("view engine", "ejs"); //tells server that we will be using ejs files
 
 
 // Routes
-app.get("/home", (req: Request, res: Response) => {
+app.get("/", (req: Request, res: Response) => {
   res.render("pages/home");
 });
 app.get("/about", (req: Request, res: Response) => {
