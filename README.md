@@ -13,5 +13,10 @@ Database: MongoDB
 npm i 
 ```
 
+## Running locally
+```bash
+npm start
+```
+
 
 Copyright 2024, All rights reservered
